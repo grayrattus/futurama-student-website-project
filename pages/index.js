@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className={styles.main}>
 	<Intro />
-	<BigText heading={'NOWY SEZON'} description={'NADCHODZI NOWY SEZON!'} background='#AA2C84' />
+	<BigText heading={'NOWY SEZON'} description={'Nadchodzi nowy sezon!'} background='#AA2C84' />
 	<Banner 
 	  background='#489699'
 	  image={imageHug}
@@ -44,8 +44,8 @@ export default function Home() {
 	  description="Niemożliwe staje się możliwe. W erze remake'ów, rebootów i kontynuacji po latach fani popularnego serialu animowanego nareszcie doczekali się wznowienia swojej ulubionej produkcji."
 	/>
 	<BigText heading={'ZNUDZONY'} description={'Znudzony animacjami na NETFLIX?'} background='#232323' />
-	<SlidableImage firstImage={imageFryGray} secondImage={imageFryColor} text='Streamowana w FULL HD' />
-	<BigText heading={'FUTURAMA'} description={'Nowy sezon Futurama! Teraz steamujemy światłowodem.'} background='#BA6520' />
+	<SlidableImage firstImage={imageFryGray} secondImage={imageFryColor} text='FUTURAMA FULL HD' />
+	<BigText heading={'FUTURAMA'} description={'FUTURAMA student theis DRAMA'} background='#BA6520' />
 	<VideoBackground src='/videos/intro-optimized.mp4' />
 	<Banner 
 	  image={imageReady}

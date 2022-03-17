@@ -35,6 +35,12 @@ a {
   src: url('/fonts/futurama/fr-fal2.ttf');
 }
 
+@font-face {
+  font-family: 'PressStart';
+  src: url('/fonts/Press_Start_2P/PressStart2P-Regular.ttf');
+}
+
+
 h1 {
   font-family: 'FrTitle';
 }

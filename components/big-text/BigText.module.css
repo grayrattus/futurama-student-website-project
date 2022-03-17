@@ -14,6 +14,8 @@
 
 .bigText p {
   color: #fff;
-  font-family: 'arial';
+  font-family: 'PressStart';
   font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 9rem;
 }
