@@ -1,0 +1,19 @@
+.bigText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bigText h2 {
+  font-family: 'fr-fal1';
+  color: #fff;
+  font-size: 10rem;
+}
+
+.bigText p {
+  color: #fff;
+  font-family: 'arial';
+  font-size: 3rem;
+}

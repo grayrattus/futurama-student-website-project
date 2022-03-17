@@ -4,16 +4,18 @@ snakeCase=$(echo $1        \
 
 mkdir ../components/$snakeCase 
 
-touch ../components/$1.js
-touch ../components/$1.module.css
+touch ../components/$snakeCase/$1.js
+touch ../components/$snakeCase/$1.module.css
 
-cat >> ../components/$1.js << EOF
+cat >> ../components/$snakeCase/$1.js << EOF
+import styles from './$1.module.css';
+
 export default function $1() {
   return <div></div>
 }
 EOF
 
-cat >> ../components/$1.module.css << EOF
+cat >> ../components/$snakeCase/$1.module.css << EOF
 .$1 {
 }
 EOF

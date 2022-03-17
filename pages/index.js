@@ -5,8 +5,17 @@ import Header from '../components/header/Header'
 import SlidableImage from '../components/slidable-image/SlidableImage'
 import styles from '../styles/Home.module.css'
 
-import fryGray from '../public/images/fry-gray.jpeg';
-import fryColor from '../public/images/fry-color.jpg';
+import imageFryGray from '../public/images/fry-gray.jpeg';
+import imageFryColor from '../public/images/fry-color.jpg';
+
+import imageRun from '../public/images/run.jpeg';
+import imageHug from '../public/images/hug.jpeg';
+import imageReady from '../public/images/ready.jpeg';
+
+import Banner from '../components/banner/Banner'
+import VideoBackground from '../components/video-background/VideoBackground'
+import BigText from '../components/big-text/BigText'
+import Intro from '../components/intro/Intro'
 
 export default function Home() {
   return (
@@ -19,7 +28,31 @@ export default function Home() {
       <header><Header /></header>
 
       <main className={styles.main}>
-	<SlidableImage firstImage={fryGray} secondImage={fryColor} text='Streamowana w FULL HD' />
+	<Intro />
+	<BigText heading={'NOWY SEZON'} description={'NADCHODZI NOWY SEZON!'} background='#AA2C84' />
+	<Banner 
+	  background='#489699'
+	  image={imageHug}
+	  heading='Futurama oficjalnie otrzyma nowy sezon!'
+	  description='"Futurama" zakończyła swoje drugie wcielenie we wrześniu 2013 roku. Teraz kultowy serial ma oficjalnie powrócić po dziesięciu latach przerwy. Niewiele animacji dla dorosłych zasłużyło na to bardziej niż produkcja Matta Groeninga'
+	/>
+	<Banner 
+	  background='#405376'
+	  image={imageRun}
+	  left={false}
+	  heading='Takie życie!'
+	  description="Niemożliwe staje się możliwe. W erze remake'ów, rebootów i kontynuacji po latach fani popularnego serialu animowanego nareszcie doczekali się wznowienia swojej ulubionej produkcji."
+	/>
+	<BigText heading={'ZNUDZONY'} description={'Znudzony animacjami na NETFLIX?'} background='#232323' />
+	<SlidableImage firstImage={imageFryGray} secondImage={imageFryColor} text='Streamowana w FULL HD' />
+	<BigText heading={'FUTURAMA'} description={'Nowy sezon Futurama! Teraz steamujemy światłowodem.'} background='#BA6520' />
+	<VideoBackground src='/videos/intro-optimized.mp4' />
+	<Banner 
+	  image={imageReady}
+	  background='#C8DEF0'
+	  heading='Przygotuj się na lot jakiego jeszcze nie miałeś'
+	/>
+
       </main>
 
       <footer className={styles.footer}>
