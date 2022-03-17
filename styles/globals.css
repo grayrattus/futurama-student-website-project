@@ -14,3 +14,33 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'FrTitle';
+  src: url('/fonts/futurama/fr-title.ttf');
+}
+
+@font-face {
+  font-family: 'FrBold';
+  src: url('/fonts/futurama/fr-bold.ttf');
+}
+
+@font-face {
+  font-family: 'fr-fal1';
+  src: url('/fonts/futurama/fr-fal1.ttf');
+}
+
+@font-face {
+  font-family: 'fr-fal2';
+  src: url('/fonts/futurama/fr-fal2.ttf');
+}
+
+h1 {
+  font-family: 'FrTitle';
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
