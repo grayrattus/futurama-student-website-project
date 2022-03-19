@@ -14,33 +14,28 @@ export default function Transition({ children, location }) {
     gsap.set(node, {
       position: "relative"
     });
-    if (location === '/') {
-      console.log('onEnter', node);
-    }
   };
   const onEnteringHandler = (node) => {
     gsap.set(node, {
       position: "absolute"
     });
-    if (location === '/') {
-      gsap.to(fullPageTransitionRef.current, {
-	opacity: 1,
-	zIndex: 10,
-	duration: 1,
-	onComplete: () => {
-	  gsap.to(fullPageTransitionRef.current, {
-	    opacity: '0',
-	    delay: 0.25,
-	    duration: 1.5,
-	    onComplete: () => {
-	      gsap.to(fullPageTransitionRef.current, {
-		zIndex: -1
-	      });
-	    }
-	  });
-	}
-      });
-    }
+    gsap.to(fullPageTransitionRef.current, {
+      opacity: 1,
+      zIndex: 10,
+      duration: 1.4,
+      onComplete: () => {
+	gsap.to(fullPageTransitionRef.current, {
+	  opacity: '0',
+	  delay: 0.5,
+	  duration: 1.5,
+	  onComplete: () => {
+	    gsap.to(fullPageTransitionRef.current, {
+	      zIndex: 0
+	    });
+	  }
+	});
+      }
+    });
   };
 
   return (
@@ -54,7 +49,7 @@ export default function Transition({ children, location }) {
 	key={location}
 	onEntering={onEnteringHandler}
 	onEnter={onEnterHandler}
-	timeout={1000}
+	timeout={1500}
       >
 	{children}
       </ReactTransition>
