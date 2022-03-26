@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+.footerContent {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footerContent ul {
+  text-decoration: none;
+  list-style: none;
+}

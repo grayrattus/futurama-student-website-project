@@ -1,0 +1,14 @@
+.custom404 {
+  position: relative;
+  min-height: 100vh;
+  backend: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.custom404 h1 {
+  padding: 3rem;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.4);
+}

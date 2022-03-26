@@ -14,13 +14,31 @@
 }
 
 .ship {
-  position: absolute;
+  position: relative;
   width: auto;
   height: auto;
+  width: 100%;
+}
+
+.shipContainerOverflow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.shipContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 750px) {
   .ship {
-    scale: 2.3;
+    width: 70%;
   }
 }
+

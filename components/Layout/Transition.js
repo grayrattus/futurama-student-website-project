@@ -10,11 +10,6 @@ import imagePlanetExpress from '../../public/images/planet-express.png';
 export default function Transition({ children, location }) {
   const fullPageTransitionRef = useRef();
 
-  const onEnterHandler = (node) => {
-    gsap.set(node, {
-      position: "relative"
-    });
-  };
   const onEnteringHandler = (node) => {
     gsap.set(node, {
       position: "absolute"
@@ -24,6 +19,9 @@ export default function Transition({ children, location }) {
       zIndex: 10,
       duration: 1.4,
       onComplete: () => {
+	gsap.set(node, {
+	  position: "relative"
+	});
 	gsap.to(fullPageTransitionRef.current, {
 	  opacity: '0',
 	  delay: 0.5,
@@ -48,7 +46,6 @@ export default function Transition({ children, location }) {
       <ReactTransition
 	key={location}
 	onEntering={onEnteringHandler}
-	onEnter={onEnterHandler}
 	timeout={1500}
       >
 	{children}

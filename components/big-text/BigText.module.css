@@ -4,18 +4,31 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 0 2rem;
 }
 
 .bigText h2 {
   font-family: 'fr-fal1';
   color: #fff;
-  font-size: 10rem;
+  font-size: 3rem;
 }
 
 .bigText p {
   color: #fff;
   font-family: 'PressStart';
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 0;
   margin-bottom: 9rem;
+}
+
+@media (min-width: 750px) {
+  .bigText {
+    padding: 0;
+  }
+  .bigText p {
+    font-size: 3rem;
+  }
+  .bigText h2 {
+    font-size: 10rem;
+  }
 }

@@ -1,0 +1,29 @@
+.mdxLayout {
+  background: #7B1F9D;
+}
+
+.mdxLayout article > p {
+  color: white;
+}
+
+.mdxLayout article > ul {
+  padding: 3rem 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.mdxLayout article > h2 {
+  color: white;
+}
+
+.mdxLayout article li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.mdxLayout article strong {
+  color: #F4585F;
+}

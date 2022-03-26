@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100px;
   background: #a15fa9;
+  height: max-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +16,29 @@
   list-style-type: none;
 }
 .header li {
+  height: 3rem;
   text-decoration: none;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease-in-out;
+}
+
+.header a {
+  height: 100%;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.header li:hover {
+  background: #BA6520;
+}
+.header path {
+  fill: #fff;
+}
+
+.active {
+  background: #BA6520;
 }

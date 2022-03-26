@@ -1,0 +1,43 @@
+import MdxLayout from '../../components/Layout/MdxLayout.js'
+import imageLinks2 from "../../public/images/screenshots/links2.png";
+import imageLinks2Shop from "../../public/images/screenshots/links2-shop.png";
+import Image from "next/image";
+
+## O stronie
+
+Do napisania strony użyłem następujących technologii
+
+- [GSAP](https://greensock.com/gsap/) - biblioteka do tworzenia zaawansowanych animacji w JavaScript. Użyłem jej ponieważ często wykorzystuje ją w pracy i lubię tworzyć w niej aniamacji opartę o `Scroll trigger`.
+- [Next.js](https://nextjs.org/) - framework pozwalający na ServerSideRendering aplikacji React.js. Użyłem go ponieważ chciałem nauczyć się nowych technologii pozwalająych na renderowanie HTML dla React po stronie serwera. Dodatkowo interesowało mnie w jaki sposób framework ten pozwala na integrację z plikami `mdx` oraz REST API.
+- React.js - biblioteka pozwalająca tworzenei reużywalnych komponentów w JavaScript. Użyłem jej ponieważ na codzień używam jej w pracy i jest ona idealna do małych projektów.
+- [Snipcart](https://snipcart.com/) - środowisko pozwalające na tworzenie sklepów dla stron WWW. Użyłem go ponieważ nigdy nie podłączyłem płatności na stronie internetowej a chciałem żeby sam projekt bardziej mnie zainteresował.
+- [react-transition-group](https://reactcommunity.org/react-transition-group/) - biblioteka pozwalająca na tworzenie animacji podczas przechodzenia między podstronami. Użyłem jej ponieważ nigdy nie wykonywałem takiej animacji i chciałem nauczyć się jak to robić.
+
+## Architektura
+
+Strona zbudowana jest w oparciu o najlepsze praktyki parcy z Next.js. 
+Podstrony umieszczone są w katalogu `pages` a komponenty w `components`. Wszystkie pliki, które powinny być dostępne publicznie zawarte są w katalogu `public`.
+
+Dodatkowo strona wykorzystuje REST API, które znajduje się w katalogu `pages/api`. Api to jest wykorzystywane do pobierania produktów oraz ich walidacji podczas dodawania do koszyka.
+
+Dodana jest również spersonalizowana strona `404`.
+
+## Komponenty
+
+Komponenty umieszczone w `components` wykorzystują CSS modules do stylowania HTML. Powoduje to, że nie jest możliwe nadpisywanie arkusza styli, z komponentów, które nie są ze sobą powiązane.
+
+Umieściłem równieś style globalne dla tagów takich jak `h1,h2`. Są one zawarte w katalogy `styles`.
+
+## Sklep
+
+Sklep nie jest podłączony do żadnej karty płatniczej i obecnie działa na środowisku testowym. Podłączenie go pod płatności moża jednak łatwo zmienić w panelu administracyjnym `Snipcart`.
+
+W przeglądarkach tekstowych wyświetli się komunikat, że strona do dokonania zakupów wymaga JavaScript tzn. nie da się kupić produktów w przeglądarkach, które mają tę technologię wyłączoną.
+
+## Zrzuty ekranu aplikacji
+
+<Image src={imageLinks2} alt='Links2 strona główna' />
+
+<Image src={imageLinks2Shop} alt='Links2 sklep' />
+
+export default ({ children }) => <MdxLayout>{children}</MdxLayout>

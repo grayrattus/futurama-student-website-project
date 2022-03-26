@@ -13,12 +13,12 @@ export default function BannerImage({image: {src, alt}, title}) {
     let tl = gsap.timeline({
       scrollTrigger: {
 	trigger: scrollerRef.current,
-	start: "top top", // when the top of the trigger hits the top of the viewport
-	end: "center top", // when the top of the trigger hits the top of the viewport
+	start: "top center", // when the top of the trigger hits the top of the viewport
+	end: "bottom center", // when the top of the trigger hits the top of the viewport
 	scrub: true
       }
     });
-    tl.to(titleRef.current, {y: 100});
+    tl.to(titleRef.current, {y: '50%'});
   });
 
   return <div ref={scrollerRef} className={styles.bannerImage}>

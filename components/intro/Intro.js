@@ -20,7 +20,7 @@ export default function Intro() {
 	trigger: scrollerRef.current,
 	pin: true,   // pin the trigger element while active
 	start: "top top", // when the top of the trigger hits the top of the viewport
-	end: "center+=1000px", // end after scrolling 500px beyond the start
+	end: "center+=700px", // end after scrolling 500px beyond the start
 	scrub: 1 // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       }
     });
@@ -37,8 +37,12 @@ export default function Intro() {
 
   return <div ref={scrollerRef} className={styles.intro}>
     <Image layout='fill' src={galaxy} />
-    <div className={styles.ship}>
-      <Image src={futuramaShip} />
+    <div className={styles.shipContainerOverflow}>
+      <div className={styles.shipContainer}>
+	<div className={styles.ship}>
+	  <Image layout='responsive' src={futuramaShip} />
+	</div>
+      </div>
     </div>
     <div className={styles.text}>
       <Image src={futuramaText} />
