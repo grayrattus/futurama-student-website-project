@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useRef} from "react"
 import { useRouter } from "next/router" 
 import Transition from './Transition'
 import Header from "../header/Header"
@@ -8,6 +8,7 @@ import Head from "next/head"
 
 export default function Layout ({ children }) {
   const router = useRouter() 
+  const menuButtonRef = useRef();
   return (
     <>
       <Head>
@@ -24,8 +25,8 @@ export default function Layout ({ children }) {
       <div className={styles.layout}>
 	<div hidden id="snipcart" data-api-key="NWU4MGNhNmUtYWE0Yy00MjA3LTlkOTItZDVlYjFkMmE5NWUxNjM3ODM5MDgzMDIzNjQyMTQy"></div>
 	{/* Header component that doesn't animate */}
-	<Header />
-	<Transition location={router.pathname}>
+	<Header menuButtonRef={menuButtonRef}/>
+	<Transition menuButtonRef={menuButtonRef} location={router.pathname}>
 	  <main className="main">{children}</main>
 	</Transition>
 	<Footer />

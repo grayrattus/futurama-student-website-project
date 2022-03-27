@@ -7,10 +7,11 @@ import {gsap} from 'gsap/dist/gsap';
 import Image from "next/image";
 import imagePlanetExpress from '../../public/images/planet-express.png';
 
-export default function Transition({ children, location }) {
+export default function Transition({ children, menuButtonRef, location }) {
   const fullPageTransitionRef = useRef();
 
   const onEnteringHandler = (node) => {
+    menuButtonRef.current.checked = false;
     gsap.set(node, {
       position: "absolute"
     });
