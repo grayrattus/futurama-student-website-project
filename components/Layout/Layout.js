@@ -5,6 +5,7 @@ import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import styles from './Layout.module.css'
 import Head from "next/head"
+import CookieConsent from "../cookie-consent/CookieConsent"
 
 export default function Layout ({ children }) {
   const router = useRouter() 
@@ -30,6 +31,7 @@ export default function Layout ({ children }) {
 	  <main className="main">{children}</main>
 	</Transition>
 	<Footer />
+	<CookieConsent />
       </div>
     </>
   )

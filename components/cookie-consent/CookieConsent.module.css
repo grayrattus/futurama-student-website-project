@@ -1,0 +1,16 @@
+.cookieConsent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  background: #fff;
+  padding: 3rem 5rem;
+}
+
+.cookieConsent button {
+  cursor: pointer;
+  background: #BA6520;
+  border: unset;
+  padding: 1rem;
+}
