@@ -1,5 +1,6 @@
 .mdxLayout {
   background: #7B1F9D;
+  padding: 3rem 0;
 }
 
 .mdxLayout article > p {
@@ -26,4 +27,9 @@
 
 .mdxLayout article strong {
   color: #F4585F;
+}
+
+.mdxLayout h2 {
+  margin: 0;
+  padding: 2rem 0;
 }

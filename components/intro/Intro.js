@@ -36,7 +36,7 @@ export default function Intro() {
   });
 
   return <div ref={scrollerRef} className={styles.intro}>
-    <Image layout='fill' src={galaxy} />
+    <Image objectFit='cover' objectPosition='center' layout='fill' src={galaxy} />
     <div className={styles.shipContainerOverflow}>
       <div className={styles.shipContainer}>
 	<div className={styles.ship}>

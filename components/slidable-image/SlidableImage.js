@@ -28,8 +28,8 @@ export default function SlidableImage({firstImage, secondImage, text}) {
   });
 
   return <div ref={scrollerRef} className={styles.container}>
-      <Image layout='fill' src={secondImage} alt="Fry na kolorowym tle" />
-      <Image layout='fill' className={styles.absoluteImage} src={firstImage} alt="Fry na szarym tle" />
+      <Image objectFit='cover' objectPosition='center' layout='fill' src={secondImage} alt="Fry na kolorowym tle" />
+      <Image objectFit='cover' objectPosition='center' layout='fill' className={styles.absoluteImage} src={firstImage} alt="Fry na szarym tle" />
       <h1 className={styles.heading}>{text}</h1>
   </div>
 }

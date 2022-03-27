@@ -7,7 +7,7 @@ export default function handler(req, res) {
     res.status(404).json({});
     return ;
   }
-  const snipcartProduct = {...product, image: product?.image.src ?? ""}
+  const snipcartProduct = { ...product }
 
   res.status(200).json(snipcartProduct);
 }
