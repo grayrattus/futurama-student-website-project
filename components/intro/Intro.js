@@ -36,16 +36,16 @@ export default function Intro() {
   });
 
   return <div ref={scrollerRef} className={styles.intro}>
-    <Image objectFit='cover' objectPosition='center' layout='fill' src={galaxy} />
+    <Image objectFit='cover' objectPosition='center' layout='fill' src={galaxy} alt="Galaxy background" />
     <div className={styles.shipContainerOverflow}>
       <div className={styles.shipContainer}>
 	<div className={styles.ship}>
-	  <Image layout='responsive' src={futuramaShip} />
+	  <Image layout='responsive' src={futuramaShip} alt="Futurama statek"/>
 	</div>
       </div>
     </div>
     <div className={styles.text}>
-      <Image src={futuramaText} />
+      <Image src={futuramaText} alt="Futurama logo duże"/>
     </div>
   </div>
 }
