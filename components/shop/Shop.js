@@ -6,7 +6,6 @@ import ShoppingItem from './shopping-item/ShoppingItem';
 import BannerImage from '../banner-image/BannerImage';
 
 function Shop(props) {
-  console.log(props);
   return <div className={styles.shop}>
     <BannerImage
       image={{src: imageShop, alt: 'Postacie z Futurama'}}

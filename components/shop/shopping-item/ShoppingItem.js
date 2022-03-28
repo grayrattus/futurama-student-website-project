@@ -12,7 +12,7 @@ export default function ShoppingItem(props) {
       data-item-name={props.product.name}
       data-item-price={props.product.price}
       data-item-url={props.product.url}
-      data-item-image={props.product.image.src}>
+      data-item-image={props.product.image}>
       Dodaj do koszyka
     </button>
   </article>
