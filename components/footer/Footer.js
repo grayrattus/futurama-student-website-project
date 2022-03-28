@@ -4,8 +4,8 @@ export default function Footer() {
   return <footer className={styles.footer}>
     <div className={styles.footerContent}>
       <ul>
-	<li>Telefon: +31 889 238 098</li>
-	<li>Email: futurama@gmail.com</li>
+	<li><a href="tel:+31889238098">Telefon: +31 899 238 098</a></li>
+	<li><a href="mailto:futurama@gmail.com">Email: futurama@gmail.com</a></li>
       </ul>
       <span>Futurama <sup>&copy;</sup></span>
     </div>

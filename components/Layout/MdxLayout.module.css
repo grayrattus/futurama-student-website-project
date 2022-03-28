@@ -3,6 +3,16 @@
   padding: 3rem 0;
 }
 
+.mdxLayout a {
+  font-size: 1.1rem;
+  color: #BAF520;
+}
+
+.mdxLayout code {
+  font-size: 1.1rem;
+  color: #BA6520;
+}
+
 .mdxLayout article > p {
   color: white;
 }
@@ -30,6 +40,12 @@
 }
 
 .mdxLayout h2 {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.mdxLayout h3 {
+  color: #fff;
   margin: 0;
   padding: 2rem 0;
 }

@@ -1,6 +1,26 @@
 import MdxLayout from '../../components/Layout/MdxLayout.js'
 import imageLinks2 from "../../public/images/screenshots/links2.png";
 import imageLinks2Shop from "../../public/images/screenshots/links2-shop.png";
+
+import chromiuimHistoria from "../../public/images/screenshots/chromiuim-historia.png"
+import chromiumMain      from "../../public/images/screenshots/chromium-main.png"
+import firefoxHistoria   from "../../public/images/screenshots/firefox-historia.png"
+import firefoxMain       from "../../public/images/screenshots/firefox-main.png"
+import firefoxSklep      from "../../public/images/screenshots/firefox-sklep.png"
+import links2             from "../../public/images/screenshots/links2.png"
+import links2Shop        from "../../public/images/screenshots/links2-shop.png"
+import midoriHistory     from "../../public/images/screenshots/midori-history.png"
+import midoriMain        from "../../public/images/screenshots/midori-main.png"
+import midoriShop        from "../../public/images/screenshots/midori-shop.png"
+import responsiveCookies from "../../public/images/screenshots/responsive-cookies.png"
+import responsiveHome    from "../../public/images/screenshots/responsive-home.png"
+import responsiveMain2  from "../../public/images/screenshots/responsive-main-2.png"
+import responsiveMenu    from "../../public/images/screenshots/responsive-menu.png"
+
+import seoDesktop    from "../../public/images/screenshots/seo-desktop.png"
+import seoMobile    from "../../public/images/screenshots/seo-mobile.png"
+
+
 import Image from "next/image";
 
 ## O stronie
@@ -38,8 +58,35 @@ Korzystając ze sklepu stona wymaga używania funkcjonalnych plików cookies.
 
 ## Zrzuty ekranu aplikacji
 
-<Image src={imageLinks2} alt='Links2 strona główna' />
+### Różne przeglądarki
 
+*Links2*
+<Image src={imageLinks2} alt='Links2 strona główna' />
 <Image src={imageLinks2Shop} alt='Links2 sklep' />
+
+*Chromium*
+<Image src={chromiuimHistoria} alt='Chromium historia' />
+<Image src={chromiumMain     } alt='Chromium strona główna' />
+
+*Firefox*
+<Image src={firefoxHistoria  } alt='Firefox historia' />
+<Image src={firefoxMain      } alt='Firefox strona główna' />
+<Image src={firefoxSklep     } alt='Firefox sklep' />
+
+*Midori*
+<Image src={midoriHistory    } alt='Midori historia' />
+<Image src={midoriMain       } alt='Midori strona główna' />
+<Image src={midoriShop       } alt='Midori sklep' />
+
+### Responsywność
+
+<Image src={responsiveCookies} alt='Seo responsywność' />
+<Image src={responsiveHome   } alt='Seo responsywność' />
+<Image src={responsiveMain2 } alt='Seo responsywność' />
+<Image src={responsiveMenu   } alt='Seo responsywność' />
+
+### SEO
+<Image src={seoDesktop   } alt='Seo desktop' />
+<Image src={seoMobile } alt='Seo mobile' />
 
 export default ({ children }) => <MdxLayout>{children}</MdxLayout>
