@@ -1,6 +1,6 @@
-import image1 from '../public/images/shop/shirt1.jpeg';
-import image2 from '../public/images/shop/shirt2.jpeg';
-import image3 from '../public/images/shop/shirt3.jpeg';
+import image1 from '/public/images/shop/shirt1.jpeg';
+import image2 from '/public/images/shop/shirt2.jpeg';
+import image3 from '/public/images/shop/shirt3.jpeg';
 
 export const products = [
   {
