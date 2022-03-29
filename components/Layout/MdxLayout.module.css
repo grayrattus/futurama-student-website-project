@@ -32,9 +32,13 @@
   color: white;
 }
 
-.mdxLayout article li {
+.mdxLayout article ul > li {
   text-decoration: none;
   list-style: none;
+  color: white;
+}
+
+.mdxLayout article ol > li {
   color: white;
 }
 
