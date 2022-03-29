@@ -16,7 +16,7 @@
 .header li {
   list-style-type: none;
 }
-.header li {
+.header a {
   height: 3rem;
   text-decoration: none;
   color: #fff;
@@ -28,11 +28,11 @@
 
 .header a {
   display: flex;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   align-items: center;
 }
 
-.header li:hover {
+.header a:hover {
   background: #BA6520;
 }
 .header path {

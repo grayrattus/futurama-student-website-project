@@ -1,6 +1,7 @@
 .mdxLayout {
   background: #7B1F9D;
   padding: 3rem 0;
+  width: 100%;
 }
 
 .mdxLayout a {
@@ -49,3 +50,4 @@
   margin: 0;
   padding: 2rem 0;
 }
+
