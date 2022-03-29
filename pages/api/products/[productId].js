@@ -1,4 +1,4 @@
-import {products} from "../../../data/products";
+import {products} from "../../index";
 
 export default function handler(req, res) {
   const {productId} = req.query;
@@ -7,7 +7,7 @@ export default function handler(req, res) {
     res.status(404).json({});
     return ;
   }
-  const snipcartProduct = product
+  const snipcartProduct= {...product, image: product?.image.src ?? ""}
 
   res.status(200).json(snipcartProduct);
 }

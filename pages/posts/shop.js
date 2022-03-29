@@ -1,5 +1,5 @@
 import ShopComponent from '../../components/shop/Shop';
-import {products} from "../../data/products";
+import {products} from '../index';
 
 function Shop(props) {
   return <div>
