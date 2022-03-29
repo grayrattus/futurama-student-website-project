@@ -1,7 +1,9 @@
 .mdxLayout {
   background: #7B1F9D;
+  position: relative;
   padding: 3rem 0;
   width: 100%;
+  min-height: 100vh;
 }
 
 .mdxLayout a {
