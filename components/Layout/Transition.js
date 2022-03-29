@@ -20,7 +20,7 @@ export default function Transition({ children, menuButtonRef, location }) {
       duration: 2,
       onComplete: () => {
 	gsap.to(fullPageTransitionRef.current, {
-	  zIndex: 0
+	  zIndex: -1
 	});
       }
     });
