@@ -6,6 +6,7 @@ export default function ShoppingItem(props) {
     <Image src={props.product.image} alt={props.product.alt} />
     <h3>{props.product.name}</h3>
     <p>{props.product.description}</p>
+    <em>{ props.product.price} PLN</em>
     <button
       className='snipcart-add-item'
       data-item-id={props.product.id}

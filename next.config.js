@@ -4,6 +4,10 @@ const nextConfig = {
 }
 
 const withMDX = require('@next/mdx')({
+  i18n: {
+    locales: ["pl"],
+    defaultLocale: "pl",
+  },
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],

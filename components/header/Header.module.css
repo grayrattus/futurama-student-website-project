@@ -76,6 +76,7 @@
   transform-origin: bottom;
   justify-content: center;
   align-items: center;
+  column-gap: 1rem;
 }
 
 .header label:after {

@@ -2,6 +2,16 @@
 
 }
 
+.shoppingItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoppingItem em {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
 .shoppingItem button {
   cursor: pointer;
   background: #BA6520;
